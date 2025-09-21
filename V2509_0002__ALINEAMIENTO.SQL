@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS adyd_tablas.alignment (
 	CONSTRAINT alignment_pkey PRIMARY KEY (id)
 );
 
-CREATE INDEX alignment_name_idx ON adyd_tablas.alignment (name);
+CREATE INDEX if not exists adyd_tablas.alignment_name_idx ON adyd_tablas.alignment (name);
 
 CREATE SEQUENCE IF NOT EXISTS adyd_tablas.seq_alignment
 	INCREMENT BY 1

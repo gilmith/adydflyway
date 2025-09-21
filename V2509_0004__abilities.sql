@@ -14,3 +14,11 @@ CREATE TABLE if not exists adyd_tablas.abilities (
 );
 
 create index if not exists abilities_name_idx on adyd_tablas.abilities (name);
+
+CREATE SEQUENCE IF NOT EXISTS adyd_tablas.seq_abilities
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 9223372036854775807
+	START 1
+	CACHE 1
+	NO CYCLE;
