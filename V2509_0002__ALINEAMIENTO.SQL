@@ -1,4 +1,4 @@
-CREATE TABLE IS NOT EXISTS adyd_tablas.alignment (
+CREATE TABLE IF NOT EXISTS adyd_tablas.alignment (
 	id int8 NOT NULL,
 	name varchar(35) NULL,
 	description varchar(300) NULL,
