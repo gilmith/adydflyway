@@ -9,7 +9,7 @@ CREATE TABLE if not exists adyd_tablas.abilities (
 	charisma_minimum int4 DEFAULT 0 NULL,
 	constitution_minimum int4 DEFAULT 0 NULL,
 	weapon_proficiences_points int4 NULL,
-	no_weapon_proficiences_point  int4 NULL,
+	no_weapon_proficiences_points  int4 NULL,
 	CONSTRAINT abilities_pkey PRIMARY KEY (id)
 );
 
