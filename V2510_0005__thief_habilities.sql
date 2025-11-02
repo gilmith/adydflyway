@@ -1,5 +1,5 @@
 
-CREATE SEQUENCE if not exits seq_thief_habilities
+CREATE SEQUENCE if not exists seq_thief_habilities
     START WITH 1
     INCREMENT BY 1
     NO MAXVALUE
@@ -7,9 +7,9 @@ CREATE SEQUENCE if not exits seq_thief_habilities
 
 
 create table if not exists thief_habilities(id int primary key,
-name varchar2(50),
+name varchar(50),
 id_race int,
 value int
 );
 
-alter table thief_habilities add constraint fk_id_raza foreign key(id_race) references races(id);
+alter table thief_habilities add constraint fk_id_raza foreign key(id_race) references race(id);
