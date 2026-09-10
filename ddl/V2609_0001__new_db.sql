@@ -1,4 +1,4 @@
-create sequence if not exists campaign_seq minvalue 0 maxvalue 999999999999;
+create sequence if not exists campaign_seq minvalue 1 maxvalue 999999999999;
 
 create table if not exists campaign(
     id int8 primary key,
