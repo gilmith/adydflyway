@@ -14,7 +14,7 @@ create sequence if not exists player_class_seq minvalue 1 maxvalue 99999999999;
 create table if not exists player_class(
     id int8 primary key,
     name varchar(200),
-    dice_hit varchar(5),
+    hit_dice varchar(5),
     create_date timestamp not null,
     create_user varchar(200) not null,
     update_date timestamp,
@@ -40,4 +40,4 @@ create index if not exists campaign_player_class_id_player_class_idx on campaign
 
 
 
-
+select  * from race_campaign where id_campaign = 0;
